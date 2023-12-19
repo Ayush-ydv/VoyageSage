@@ -1,9 +1,14 @@
 import { createContext, useEffect, useReducer } from 'react'
 
+let user = localStorage.getItem("user");
+if (user && user !== "undefined") {
+    user = JSON.parse(user);
+} else {
+    user = null;
+}
+
 const initial_state = {
-   // user: localStorage.getItem("user") !== undefined ? JSON.stringify(localStorage.getItem("user")) : null,
-   // user: localStorage.getItem("user") !== undefined ? localStorage.getItem("user") : null,
-   user: localStorage.getItem("user") !== undefined ? JSON.parse(localStorage.getItem("user")) : null,
+   user: user,
    loading: false,
    error: null
 }
@@ -47,7 +52,6 @@ const AuthReducer = (state, action) => {
          return state
    }
 }
-
 
 export const AuthContextProvider = ({ children }) => {
 

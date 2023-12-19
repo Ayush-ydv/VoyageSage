@@ -11,13 +11,19 @@ const nav__links = [
       display: 'Home'
    },
    {
-      path: '/about',
-      display: 'About'
-   },
-   {
       path: '/tours',
       display: 'Tours'
    },
+   {
+      path: '/blogs',
+      display: 'Blogs'
+   },
+   
+   {
+      path: '/about',
+      display: 'About'
+   },
+   
 ]
 
 const Header = () => {

@@ -27,12 +27,13 @@ const Home = () => {
                         <Subtitle subtitle={'Know Before You Go'} />
                         <img src={worldImg} alt="" />
                      </div>
-                     <h1>Traveling opens the door to creating <span className='hightlight'> memories</span></h1>
+                     <h1>Embark on Extraordinary <span className='hightlight'> Journeys of Discovery</span> and Wonder </h1>
                      <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                        Ullam ipsum nobis asperiores soluta voluptas quas voluptates.
-                        Molestiae tempora dignissimos, animi praesentium molestias perferendis
-                        porro expedita delectus. Soluta natus porro.
+                     Discover, Explore, and Create Memories with Our Exclusive Tours.
+Unleash the adventurer within and immerse yourself in a world of discovery.
+ Our exclusive tours are meticulously crafted to not only showcase the breathtaking
+ landscapes and vibrant cultures of our destinations but to provide you with a journey
+ that transcends the ordinary.   
                      </p>
                   </div>
                </Col>

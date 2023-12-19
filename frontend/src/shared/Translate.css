@@ -1,0 +1,48 @@
+.app {
+    position: relative;
+    padding: 20px;
+  }
+  
+  .translation-card {
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .select-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .translate-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #e8bc90;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .translate-button:hover {
+    background-color: #e47b26;
+  }
+  
+  .translate-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+  
