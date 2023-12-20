@@ -1,0 +1,102 @@
+
+  
+  .cloud-button {
+    font-size: 1rem;
+    background: none;
+    padding-right: 126px;
+    padding-bottom: 9px;
+    border: none;
+    cursor: pointer;
+  }
+  /* Rest of your CSS... */
+
+input[type="text"]::placeholder {
+  color: #999;
+  font-size: 0.8em;
+}
+
+input[type="text"]:focus::placeholder {
+  color: #666;
+}
+  
+  .weather-card {
+    background-color: #add9f9;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 2px 7px 0 rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+  }
+  
+  .weather-card h2 {
+    margin-top: 0;
+  }
+  
+  .weather-card p {
+    margin-bottom: 10px;
+  }
+  
+  /* CSS transitions */
+  .card-enter {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  
+  .card-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 300ms, transform 300ms;
+  }
+  
+  .card-exit {
+    opacity: 1;
+  }
+  
+  .card-exit-active {
+    opacity: 0;
+    transition: opacity 300ms;
+  }
+  .weather-widget {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+  }
+  
+  .cloud-button {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .weather-card button {
+    background-color: #3DAEFF; /* Green */
+    border: none;
+    color: white;
+    border-radius: 50px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .weather-card button:hover {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+  }  
+
+  /* Rest of your CSS... */
+
+.fa-icon {
+    color: #3DAEFF;
+  }
+  

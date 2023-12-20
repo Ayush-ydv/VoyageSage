@@ -29,14 +29,14 @@
   .translate-button {
     width: 100%;
     padding: 10px;
-    background-color: #e8bc90;
+    background-color: #3DAEFF;
     color: white;
     border: none;
     cursor: pointer;
   }
   
   .translate-button:hover {
-    background-color: #e47b26;
+    background-color: #3DAEFF;
   }
   
   .translate-icon {
@@ -44,5 +44,8 @@
     bottom: 20px;
     right: 20px;
     cursor: pointer;
+    z-index: 1000;
   }
+
+  
   

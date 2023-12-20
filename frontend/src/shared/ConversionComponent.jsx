@@ -79,17 +79,25 @@ const ConversionComponent = () => {
           style={{
             position: "fixed",
             bottom: "60px",
-            right: "90px",
+            right: "50px",
             width: "300px",
             height: "400px",
-            backgroundColor: "#fff",
+            backgroundColor: "#3DAEFF",
             boxShadow: "0 0 10px rgba(0,0,0,0.25)",
             padding: "20px",
             overflowY: "scroll",
             borderRadius: "10px",
           }}
         >
-          <h2>Currency Converter</h2>
+          <h2
+            style={
+              {
+                fontFamily: "Courier New, monospace",
+                fontSize: "20px",
+                marginLeft: "22px"
+              }
+            }
+          >Currency Converter</h2>
           <div style={{ marginBottom: "20px" }}>
             <label
               htmlFor="fromCurrency"
@@ -181,46 +189,40 @@ const ConversionComponent = () => {
           </div>
 
           <div style={{ textAlign: "center" }}>
-            <button
-              onClick={handleConversion}
-              style={{
-                padding: "10px 20px",
-                fontSize: "16px",
-                borderRadius: "5px",
-                border: "none",
-                backgroundColor: "#007bff",
-                color: "#fff",
-                cursor: "pointer",
-              }}
-            >
-              Convert
-            </button>
-          </div>
+  <button
+    onClick={handleConversion}
+    style={{
+      padding: "10px 20px",
+      fontSize: "16px",
+      borderRadius: "5px",
+      border: "none",
+      backgroundColor: "#007bff",
+      color: "#fff",
+      cursor: "pointer",
+    }}
+  >
+    Convert
+  </button>
+  {convertedAmount && (
+    <div>
+      <p>
+        {amount} {fromCurrency} is equal to {convertedAmount} {toCurrency}
+      </p>
+    </div>
+  )}
+</div>
 
-          {showModal && (
-            <div className="modal">
-              <div className="modal-content">
-                <span className="close" onClick={handleModalClose}>
-                  ×
-                </span>
-                <h3>Conversion Result</h3>
-                <p>
-                  {amount} {fromCurrency} is equal to {convertedAmount}{" "}
-                  {toCurrency}
-                </p>
-              </div>
-            </div>
-          )}
+         
         </div>
       )}
       <button
         style={{
           position: "fixed",
           bottom: "22px",
-          right: "90px",
+          right: "70px",
           zIndex: 1000,
           padding: "8px 16px",
-          backgroundColor: "#007bff",
+          backgroundColor: "#3DAEFF",
           color: "#fff",
           border: "none",
           borderRadius: "100px",

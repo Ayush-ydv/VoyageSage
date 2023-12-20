@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './Translate.css';
+import googletranslate from '../assets/images/googletranslate.png';
+
 
 const TranslationApp = () => {
   const [query, setQuery] = useState('');
@@ -15,13 +17,14 @@ const TranslationApp = () => {
     getSupportedLanguages();
   }, []);
 
+  
   const getSupportedLanguages = async () => {
     const options = {
       method: 'GET',
       url: 'https://google-translate1.p.rapidapi.com/language/translate/v2/languages',
       headers: {
         'Accept-Encoding': 'application/gzip',
-        'X-RapidAPI-Key': '1ef47337d7msh89c104089ba955cp1b272djsn59bf3d530a98', // Replace with your RapidAPI key
+        'X-RapidAPI-Key': 'c4e10e15d2msh66a2f00a4571eebp1492dajsn69d4602d1f39', // Replace with your RapidAPI key
         'X-RapidAPI-Host': 'google-translate1.p.rapidapi.com',
       },
     };
@@ -44,7 +47,7 @@ const TranslationApp = () => {
       headers: {
         'content-type': 'application/x-www-form-urlencoded',
         'Accept-Encoding': 'application/gzip',
-        'X-RapidAPI-Key': '1ef47337d7msh89c104089ba955cp1b272djsn59bf3d530a98', // Replace with your RapidAPI key
+        'X-RapidAPI-Key': 'c4e10e15d2msh66a2f00a4571eebp1492dajsn69d4602d1f39', // Replace with your RapidAPI key
         'X-RapidAPI-Host': 'google-translate1.p.rapidapi.com',
       },
       data: encodedParams,
@@ -72,7 +75,7 @@ const TranslationApp = () => {
       headers: {
         'content-type': 'application/x-www-form-urlencoded',
         'Accept-Encoding': 'application/gzip',
-        'X-RapidAPI-Key': '1ef47337d7msh89c104089ba955cp1b272djsn59bf3d530a98', // Replace with your RapidAPI key
+        'X-RapidAPI-Key': 'c4e10e15d2msh66a2f00a4571eebp1492dajsn69d4602d1f39', // Replace with your RapidAPI key
         'X-RapidAPI-Host': 'google-translate1.p.rapidapi.com',
       },
       data: encodedParams,
@@ -143,8 +146,8 @@ const TranslationApp = () => {
 
       <div className="translate-icon">
         <span onClick={toggleTranslationCard}>
-          <img
-            src="https://www.gstatic.com/images/branding/product/1x/translate_24dp.png"
+          <img className='google-image'
+            src= {googletranslate}
             alt="Google Translate"
             width="44"
             height="44"

@@ -28,7 +28,7 @@ const TourDetails = () => {
 
    const submitHandler = async e => {
       e.preventDefault()
-      const reviewText = reviewMsgRef.current.value
+      const reviewText = reviewMsgRef.current.valueOf
 
       try {
          if (!user || user === undefined || user === null) {
@@ -43,6 +43,7 @@ const TourDetails = () => {
          const res = await fetch(`${BASE_URL}/review/${id}`, {
             method: 'post',
             headers: {
+               'Authorization': 'Bearer ' ,
                'content-type': 'application/json'
             },
             credentials: 'include',
